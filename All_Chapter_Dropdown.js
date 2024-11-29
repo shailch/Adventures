@@ -58,9 +58,9 @@ dropdownContainer.innerHTML = `
   <div class="dropdown">
     <button class="dropdown-button">Chapters</button>
     <div class="dropdown-menu">
-      <a href="./Homepage/index.html"> Home </a>
-      <a href="./Chapter-1/Chapter-1.html">Chapter-1</a>
-      <a href="./Chapter-2/Chapter-2.html">Chapter-2</a>
+      <a href="./index.html"> Home </a>
+      <a href="./Chapter-1.html">Chapter-1</a>
+      <a href="./Chapter-2.html">Chapter-2</a>
       
     </div>
   </div>
