@@ -443,3 +443,53 @@ var width = window.innerWidth,
 for(var w = 0; w < boards; w++){
   tetrisInstances.push(new Tetris(20 * Math.round((w*bWidth)/20), 0, bWidth));
 }
+
+
+// Function to handle responsive design changes
+function applyResponsiveStyles() {
+    const body = document.body;
+    const navbar = document.querySelector('.navbar');
+    const container = document.querySelector('.container');
+  
+    // Check the window width
+    const windowWidth = window.innerWidth;
+  
+    // Mobile devices (max-width: 600px)
+    if (windowWidth <= 600) {
+      body.style.fontSize = '14px';  // Adjust font size
+      if (container) {
+        container.style.padding = '10px';  // Adjust padding
+      }
+      if (navbar) {
+        navbar.style.display = 'block';  // Stack navbar items vertically
+      }
+    }
+    // Tablets and larger mobile devices (max-width: 768px)
+    else if (windowWidth <= 768) {
+      if (navbar) {
+        navbar.style.flexDirection = 'column';  // Stack navbar items
+      }
+    }
+    // For larger screens, revert to original layout
+    else {
+      if (body) {
+        body.style.fontSize = '';  // Reset font size
+      }
+      if (container) {
+        container.style.padding = '';  // Reset padding
+      }
+      if (navbar) {
+        navbar.style.display = '';  // Reset navbar display
+        navbar.style.flexDirection = '';  // Reset navbar layout
+      }
+    }
+  }
+  
+  // Apply responsive styles on page load
+  window.addEventListener('load', applyResponsiveStyles);
+  
+  // Apply responsive styles when the window is resized
+  window.addEventListener('resize', applyResponsiveStyles);
+  
+  
+  
