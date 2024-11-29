@@ -79,4 +79,25 @@ body{
       stroke-dashoffset: 437;
   }
  
+/* Mobile devices */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .container {
+    padding: 10px; /* Adjust padding */
+  }
+
+  .navbar {
+    display: block; /* Stack items vertically */
+  }
+}
+
+/* Tablets and larger mobile devices */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack navbar items */
+  }
+}
 
