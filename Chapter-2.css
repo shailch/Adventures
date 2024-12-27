@@ -60,7 +60,7 @@ BUTTON-2 - NEW FRIENDS
     box-shadow: 0 0 0.5rem var(--color-accent);
     background: var(--bg-top-line-start), var(--bg-top-dots), var(--bg-right-line-start), var(--bg-right-dots), var(--bg-bottom-line-start), var(--bg-bottom-dots), var(--bg-left-line-start), var(--bg-left-dots);
     margin-top: 150px;
-    margin-left: 500px;
+    margin-left: 420px;
   }
   .chapter2-button:focus, .chapter2-button:hover {
     outline: none;
